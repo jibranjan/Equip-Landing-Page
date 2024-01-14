@@ -1,0 +1,1817 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="This is a landing page of equip. Equip is a testing platform that helps recruiters with candidate screening using online skill tests."
+    />
+    <link rel="icon" href="https://cdn.equip.co/static/img/favicon.png" />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/1b09ae3a4c.js"
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="tailwind.config.js"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          screens: {
+            xs: "450px",
+            sm: "640px",
+            md: "768px",
+            lg: "1024px",
+            xl: "1280px",
+            "2xl": "1536px",
+          },
+        },
+      };
+    </script>
+    <script defer src="script.js"></script>
+    <title>Equip &mdash; Landing page</title>
+  </head>
+  <body>
+    <div class="forHeaderSticky">
+      <header class="sticky w-full top-0 bg-white shadow-sm z-20">
+        <nav
+          class="insideHeader flex items-center gap-2 px-4 h-16 w-full max-w-7xl mx-auto"
+        >
+          <div class="flex items-center md:hidden">
+            <button id="showSideMenu" class="peer">
+              <ion-icon
+                class="icon-mobile-nav text-2xl relative"
+                name="menu-outline"
+              ></ion-icon>
+            </button>
+            <div
+              class="insideNav -translate-x-full transition-all ease-in duration-300 absolute top-3 left-0 bg-white px-3 py5 font-semibold h-screen sm:w-96"
+            >
+              <header
+                class="flex items-center justify-between tracking-widest text-lg font-normal pb-5 h-16"
+              >
+                <span class="uppercase">Equip</span>
+                <button
+                  id="hideSideMenu"
+                  id="showSideMenu"
+                  class="flex items-center"
+                >
+                  <ion-icon
+                    class="icon-mobile-nav text-gray-500 text-2xl hover:bg-gray-100 rounded-md"
+                    name="close-outline"
+                  ></ion-icon>
+                </button>
+              </header>
+              <div
+                class="navGridContent grid grid-cols-2 gap-y-16 sm:gap-x-7 mb-16 text-sm"
+              >
+                <div class="useCases2">
+                  <p class="text-gray-700 mb-2">USE CASES</p>
+                  <ul class="flex flex-col gap-2">
+                    <li>
+                      <a href="#">Tech Hiring</a>
+                    </li>
+                    <li>
+                      <a href="#">Non-Tech Hiring</a>
+                    </li>
+                    <li>
+                      <a href="#">Campus Hiring</a>
+                    </li>
+                    <li>
+                      <a href="#">Assessing Students Online</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="sampleDashboards2">
+                  <p class="text-gray-700 mb-2">SAMPLE DASHBOARDS</p>
+                  <ul class="flex flex-col gap-2">
+                    <li>
+                      <a href="#">Recruiter Dashboard</a>
+                    </li>
+                    <li>
+                      <a href="#">Engineering Role</a>
+                    </li>
+                    <li>
+                      <a href="#">Buisness Development Role</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="mainFeatures2">
+                  <p class="text-gray-700 mb-2">MAIN FEATURES</p>
+                  <ul class="flex flex-col gap-2">
+                    <li>
+                      <a href="#">Cool Features</a>
+                    </li>
+                    <li>
+                      <a href="#">Useful Featurres</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="others">
+                  <p class="text-gray-700 mb-2">OTHERS</p>
+                  <ul class="flex flex-col gap-2">
+                    <li>
+                      <a href="#">Recource center</a>
+                    </li>
+                    <li>
+                      <a href="#">Skills</a>
+                    </li>
+                    <li>
+                      <a href="#">FAQs</a>
+                    </li>
+                    <li>
+                      <a href="#">Blog</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="recruiterButton">
+                <button>
+                  <a
+                    class="tracking-wider text-blue-900 border border-blue-900 rounded-full px-5 py-2"
+                    href="#"
+                    >RECRUITER SIGNUP</a
+                  >
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="logo mr-1 md:mr-3 lg:mr-5">
+            <img
+              class="h-5 lg:h-7"
+              src="https://equip.co/static/img/equip-logo.png"
+              alt="equipLogo"
+            />
+          </div>
+          <div
+            class="headerLinks flex gap-3 md:gap-4 lg:gap-5 items-center text-xs lg:text-base text-blue-900"
+          >
+            <div class="testsLink">
+              <a class="lg:hidden" href="#">TESTS</a>
+              <a class="hidden lg:inline-block" href="#">TEST TYPES</a>
+            </div>
+            <div class="skillsLink relative group">
+              <a class="hidden md:flex items-center gap-1" href="#"
+                >SKILLS
+                <ion-icon
+                  class="text-sm group-hover:rotate-180"
+                  name="chevron-down-outline"
+                ></ion-icon
+              ></a>
+              <div
+                class="insideSkills shadow-md hidden rounded-md bg-white text-base absolute top-4 lg:top-6 -left-3 group-hover:grid grid-cols-2 p-5 gap-x-5 gap-y-8 min-w-max max-h-fit"
+              >
+                <div class="webDevelopment flex flex-col gap-1 text-blue-600">
+                  <h3 class="text-gray-700 font-medium">WEB DEVELOPMENT</h3>
+                  <ul>
+                    <li>
+                      <img
+                        src="https://cdn.equip.co/static/img/homepage/skills-icons/frontend.png"
+                        alt="frontend icon"
+                      />
+                      <a href="#">Frontend</a>
+                    </li>
+                    <li>
+                      <img
+                        src="https://cdn.equip.co/static/img/homepage/skills-icons/reactjs.png"
+                        alt="react icon"
+                      /><a href="#">ReactJS</a>
+                    </li>
+                    <li>
+                      <img
+                        src="https://cdn.equip.co/static/img/homepage/skills-icons/sql.png"
+                        alt="backend icon"
+                      />
+                      <a href="#">Backend</a>
+                    </li>
+                    <li>
+                      <img
+                        src="https://cdn.equip.co/static/img/homepage/skills-icons/mernstack.png"
+                        alt="mern icon"
+                      />
+                      <a href="#">MERN</a>
+                    </li>
+                    <li>
+                      <img
+                        src="https://cdn.equip.co/static/img/homepage/skills-icons/fullstack.png"
+                        alt="fullstack icon"
+                      />
+                      <a href="#">Full Stack</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="programming flex flex-col gap-1 text-blue-600">
+                  <h3 class="text-gray-700 font-medium">PROGRAMMING</h3>
+                  <ul>
+                    <li>
+                      <img
+                        src="https://cdn.equip.co/static/img/homepage/skills-icons/python.png"
+                        alt="python icon"
+                      />
+                      <a href="#">Python</a>
+                    </li>
+                    <li>
+                      <img
+                        src="https://cdn.equip.co/static/img/homepage/skills-icons/cpp.png"
+                        alt="c++ icon"
+                      />
+                      <a href="#">C++</a>
+                    </li>
+                    <li>
+                      <img
+                        src="https://cdn.equip.co/static/img/homepage/skills-icons/java.png"
+                        alt="java icon"
+                      />
+                      <a href="#">Java</a>
+                    </li>
+                    <li>
+                      <img
+                        src="https://cdn.equip.co/static/img/homepage/skills-icons/c.png"
+                        alt="c icon"
+                      />
+                      <a href="#">C</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="salesMarketing flex flex-col gap-1 text-blue-600">
+                  <h3 class="text-gray-700 font-medium">SALES & MARKETING</h3>
+                  <ul>
+                    <li>
+                      <img
+                        src="https://cdn.equip.co/static/img/homepage/skills-icons/digital-marketing.png"
+                        alt="dm icon"
+                      />
+                      <a href="#">Digital Marketing</a>
+                    </li>
+                    <li>
+                      <img
+                        src="https://cdn.equip.co/static/img/homepage/skills-icons/google-ads.png"
+                        alt=" google  icon"
+                      />
+                      <a href="#">Google Ads</a>
+                    </li>
+                    <li>
+                      <img
+                        src="https://cdn.equip.co/static/img/homepage/skills-icons/fb-and-insta-ads.png"
+                        alt="meta icon"
+                      />
+                      <a href="#">FB & Instagram Ads</a>
+                    </li>
+                    <li>
+                      <img
+                        src="https://cdn.equip.co/static/img/homepage/skills-icons/attention-to-detail.png"
+                        alt="buisness devlp icon"
+                      />
+                      <a href="#">Buisness Development</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="dataAnalysis flex flex-col gap-1 text-blue-600">
+                  <h3 class="text-gray-700 font-medium">DATA ANALYSIS</h3>
+                  <ul>
+                    <li>
+                      <img
+                        src="https://cdn.equip.co/static/img/homepage/skills-icons/data-science.png"
+                        alt="ds icon"
+                      />
+                      <a href="#">Data Science</a>
+                    </li>
+                    <li>
+                      <img
+                        src="https://cdn.equip.co/static/img/homepage/skills-icons/machine-learning.png"
+                        alt="ml icon"
+                      />
+                      <a href="#">Machine Learning</a>
+                    </li>
+                    <li>
+                      <img
+                        src="https://cdn.equip.co/static/img/homepage/skills-icons/data-entry.png"
+                        alt="de icon"
+                      />
+                      <a href="#">Data Entry</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="customerSuccess flex flex-col gap-1 text-blue-600">
+                  <h3 class="text-gray-700 font-medium">CUSTOMER SUCCESS</h3>
+                  <ul>
+                    <li>
+                      <img
+                        src="https://cdn.equip.co/static/img/homepage/skills-icons/customer-support.png"
+                        alt="customer support icon"
+                      />
+                      <a href="#">Customer Support</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="viewAllSKills">
+                  <a class="text-blue-400 text-md" href="#">
+                    View All Skills &rarr;</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="pricingLink">
+              <a href="#">PRICING</a>
+            </div>
+            <div class="useCasesLink relative group">
+              <a class="hidden md:flex items-center gap-1" href="#"
+                >USE CASES
+                <ion-icon
+                  class="text-sm group-hover:rotate-180"
+                  name="chevron-down-outline"
+                ></ion-icon
+              ></a>
+              <div
+                class="insideUseCases shadow-md hidden group-hover:flex flex-col absolute top-4 lg:top-6 -left-10 rounded-md bg-white text-base text-blue-600 p-5 min-w-max max-h-fit"
+              >
+                <ul>
+                  <li class="flex items-center gap-3">
+                    <img
+                      class="h-5 w-5"
+                      src="https://cdn.equip.co/static/img/homepage/tech-hiring.png"
+                      alt="tech hiring icon"
+                    />
+                    <a href="#">Tech Hiring</a>
+                  </li>
+                  <li class="flex items-center gap-3">
+                    <img
+                      class="h-5 w-5"
+                      src="https://cdn.equip.co/static/img/homepage/non-tech-hiring.png"
+                      alt="non-tech hiring icon"
+                    />
+                    <a href="#">Non-Tech Hiring</a>
+                  </li>
+                  <li class="flex items-center gap-3">
+                    <img
+                      class="h-5 w-5"
+                      src="https://cdn.equip.co/static/img/homepage/campus-hiring.png"
+                      alt="campus hiring icon"
+                    />
+                    <a href="#">Campus Hiring</a>
+                  </li>
+                  <li class="flex items-center gap-3">
+                    <img
+                      class="h-5 w-5"
+                      src="https://cdn.equip.co/static/img/homepage/assessing-students-online.png"
+                      alt="assessing hiring icon"
+                    />
+                    <a href="#">Assessing Students Hiring</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="resourcesLink relative group">
+              <a class="hidden md:flex items-center gap-1" href="#"
+                >RESOURCES
+                <ion-icon
+                  class="text-sm group-hover:rotate-180"
+                  name="chevron-down-outline"
+                ></ion-icon
+              ></a>
+              <div
+                class="insideResources shadow-md hidden group-hover:flex flex-col gap-5 absolute top-4 lg:top-6 -left-10 rounded-md bg-white text-base text-blue-600 p-5 min-w-max max-h-fit"
+              >
+                <div class="sampleDashboards flex flex-col gap-2">
+                  <span class="text-gray-700 font-medium"
+                    >SAMPLE DASHBOARDS</span
+                  >
+                  <ul class="flex flex-col gap-1 ml-3">
+                    <li>
+                      <a href="#">Recruiter Dashboard</a>
+                    </li>
+                    <li>
+                      <a href="#">Engineering Role</a>
+                    </li>
+                    <li>
+                      <a href="#">Buisness Development Role</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="mainFeatures flex flex-col gap-2">
+                  <span class="text-gray-700 font-medium">MAIN FEATURES</span>
+                  <ul class="flex flex-col gap-1 ml-3">
+                    <li>
+                      <a href="#">Cool Features</a>
+                    </li>
+                    <li>
+                      <a href="#">Useful Features</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="content flex flex-col gap-2">
+                  <span class="text-gray-700 font-medium">CONTENT</span>
+                  <ul class="flex flex-col gap-1 ml-3">
+                    <li>
+                      <a href="#">Blog</a>
+                    </li>
+                    <li>
+                      <a href="#">FAQs</a>
+                    </li>
+                    <li>
+                      <a href="#">Resource Center</a>
+                    </li>
+                    <li>
+                      <a href="#">Sample Job Descriptions</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="md:hidden login self-center ml-auto">
+            <a
+              href="#"
+              class="bg-blue-900 text-white tracking-wider py-2 px-3 rounded-full text-xs"
+              >LOGIN</a
+            >
+          </div>
+          <div
+            class="signup hidden text-xs md:flex lg:text-sm tracking-widest font-thin items-center gap-4 ml-auto whitespace-nowrap"
+          >
+            <a class="text-blue-900" href="#">CANDIDATE LOGIN</a>
+            <a
+              href="#"
+              class="bg-blue-900 text-white py-3 px-4 lg:px-6 inline-block rounded-full"
+              >RECRUITER SIGNUP</a
+            >
+          </div>
+        </nav>
+      </header>
+      <section class="heroSection bg-gradient-to-b from-indigo-100">
+        <div class="insideHero flex flex-col max-w-7xl mx-auto">
+          <div
+            class="heroSectionTop grid grid-cols-2 md:grid-cols-10 px-3 mb-16 md:mb-24"
+          >
+            <div
+              class="topImage col-span-2 md:col-span-4 flex items-start justify-center p-4 md:pt-10 md:p-0"
+            >
+              <img
+                class="w-72 md:w-96 max-w-full"
+                src="https://cdn.equip.co/static/img/homepage/hero-image.png"
+                alt="images of several people in a bubble frame"
+              />
+            </div>
+            <div class="topText col-span-2 md:col-span-6 md:mt-16 md:pr-4">
+              <h1
+                class="text-blue-900 text-4xl lg:text-5xl text-center md:text-start font-extrabold mb-7"
+              >
+                Shortlist Candidates
+                <span class="text-emerald-500/75 block mt-2 whitespace-nowrap"
+                  >In Minutes</span
+                >
+              </h1>
+              <p
+                class="text-blue-900 text-center md:text-start mb-10 lg:text-lg md:mr-2"
+              >
+                Identify your best tech and non-tech candidates starting at just
+                <strong>₹60</strong> per candidate
+              </p>
+              <div
+                class="heroLinks flex flex-col xs:flex-row xs:justify-center md:justify-start text-center gap-4 w-full px-5 xs:px-0"
+              >
+                <div class="heroLinkOne xs:w-full sm:w-fit">
+                  <a
+                    class="text-white xs:text-sm lg:text-base block bg-emerald-500/75 tracking-widest font-semibold rounded-full px-8 py-3 hover:bg-emerald-600 hover:scale-105 transition-all ease-in-out duration-150"
+                    href="#"
+                    >EXPLORE TESTS</a
+                  >
+                  <p class="mt-3 text-blue-900 text-sm">
+                    Different Tests for Different Roles
+                  </p>
+                </div>
+                <div
+                  class="heroLinkTwo xs:w-full sm:w-fit font-semibold group relative"
+                >
+                  <a
+                    href="#"
+                    class="heroLinkTwoLink text-emerald-500/75 xs:text-sm lg:text-base flex justify-center items-center gap-2 tracking-widest border border-emerald-500/75 group-hover:invisible rounded-full px-8 xs:px-7 py-3"
+                    >USE EQUIP FOR
+                    <ion-icon
+                      class="text-lg"
+                      name="chevron-down-outline"
+                    ></ion-icon
+                  ></a>
+
+                  <div
+                    class="insideUseEquipFor hidden group-hover:flex flex-col w-full border rounded-3xl border-emerald-500/75 px-4 py-6 pt-3 absolute top-0 text-blue-900 font-extralight text-sm bg-indigo-50"
+                  >
+                    <a
+                      href="#"
+                      class="text-emerald-500/75 xs:text-sm lg:text-base flex font-semibold justify-center items-center gap-2 tracking-widest"
+                      >USE EQUIP FOR
+                      <ion-icon
+                        class="text-lg"
+                        name="chevron-down-outline"
+                      ></ion-icon
+                    ></a>
+                    <ul class="flex flex-col gap-1 mt-4 lg:text-base">
+                      <li
+                        class="flex items-center gap-3 py-1 border border-gray-200 border-t-0 border-r-0 border-l-0 bg-indigo-200 bg-opacity-0 hover:bg-opacity-10"
+                      >
+                        <img
+                          class="h-5 w-5"
+                          src="https://cdn.equip.co/static/img/homepage/tech-hiring.png"
+                          alt="tech hiring icon"
+                        />
+                        <a href="#">Tech Hiring</a>
+                      </li>
+                      <li
+                        class="flex items-center gap-3 py-1 border border-gray-200 border-t-0 border-r-0 border-l-0 bg-indigo-200 bg-opacity-0 hover:bg-opacity-10"
+                      >
+                        <img
+                          class="h-5 w-5"
+                          src="https://cdn.equip.co/static/img/homepage/non-tech-hiring.png"
+                          alt="non-tech hiring icon"
+                        />
+                        <a href="#">Non-Tech Hiring</a>
+                      </li>
+                      <li
+                        class="flex items-center gap-3 py-1 border border-gray-200 border-t-0 border-r-0 border-l-0 bg-indigo-200 bg-opacity-0 hover:bg-opacity-10"
+                      >
+                        <img
+                          class="h-5 w-5"
+                          src="https://cdn.equip.co/static/img/homepage/campus-hiring.png"
+                          alt="campus hiring icon"
+                        />
+                        <a href="#">Campus Hiring</a>
+                      </li>
+                      <li
+                        class="flex items-center gap-3 py-1 bg-indigo-200 bg-opacity-0 hover:bg-opacity-10"
+                      >
+                        <img
+                          class="h-5 w-5"
+                          src="https://cdn.equip.co/static/img/homepage/assessing-students-online.png"
+                          alt="assessing hiring icon"
+                        />
+                        <a href="#">Assessing Students Hiring</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="whyEquip px-3 text-center">
+            <h2 class="text-blue-900 text-2xl md:text-3xl font-extrabold mb-10">
+              Why use <span class="text-emerald-500/75">Equip?</span>
+            </h2>
+            <div
+              class="reasons text-start px-5 text-lg flex flex-col lg:flex-row lg:justify-around w-fit lg:w-full mx-auto"
+            >
+              <div
+                class="manyCandidates flex items-center gap-4 mb-6 lg:mb-0 lg:w-1/4"
+              >
+                <ion-icon
+                  class="text-emerald-500/75 text-5xl xs:text-3xl lg:text-7xl"
+                  name="chatbubble-ellipses-outline"
+                ></ion-icon>
+                <p class="text-blue-900">
+                  You're manually interviewing too
+                  <strong class="font-extrabold">many candidates</strong>
+                </p>
+              </div>
+              <div
+                class="noFamiliarity flex items-center gap-4 mb-6 lg:mb-0 lg:w-1/4"
+              >
+                <ion-icon
+                  class="text-emerald-500/75 text-5xl xs:text-3xl lg:text-7xl"
+                  name="warning-outline"
+                ></ion-icon>
+                <p class="text-blue-900">
+                  <strong class="font-extrabold">No familiarity</strong> with
+                  the skills candidate is being hired for
+                </p>
+              </div>
+              <div
+                class="streamlining flex items-center gap-4 mb-6 lg:mb-0 lg:w-1/4"
+              >
+                <ion-icon
+                  class="text-emerald-500/75 text-5xl xs:text-3xl lg:text-7xl"
+                  name="checkmark-done-outline"
+                ></ion-icon>
+                <p class="text-blue-900">
+                  Your current shortlisting process needs
+                  <strong class="font-extrabold">streamlining</strong>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            class=".heroSectionLast mt-16 pb-10 mx-2 flex flex-col lg:flex-row lg:justify-between lg:self-center gap-5 text-center lg:text-start lg:max-w-6xl"
+          >
+            <span
+              class="text-blue-900 text-2xl lg:text-3xl font-bold mb-5 lg:mb-0 leading-snug px-3 lg:w-2/5"
+            >
+              Give us the haystack, we'll find you the
+              <span class="text-emerald-500/75 whitespace-nowrap"
+                >sharpest needle!</span
+              >
+            </span>
+            <div class="text-sm lg:text-lg leading-7 px-3">
+              <p class="text-blue-900">
+                Exceptional Companies are just teams of Exceptional Individuals.
+              </p>
+              <p class="text-blue-900">
+                We'll equip you with these exceptional individuals
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="howItWorksSection bg-blue-900 h-full w-full p-7">
+        <div class="lg:flex justify-center">
+          <div
+            class="insideHIW text-gray-200/75 flex flex-col md:flex-row gap-5 md:gap-0 justify-between mb-5 md:mb-0 md:max-w-7xl md:overflow-x-auto"
+          >
+            <div
+              id="howItWorksCardAssessment"
+              class="assessment howItWorksCard cursor-pointer flex flex-col gap-2 md:gap-4 md:min-w-60 lg:min-w-64 lg:p-10 lg:w-1/4 md:px-3 md:py-4 md:hover:border border-blue-500/50 rounded-3xl group"
+            >
+              <div
+                id="howItWorksCardAssessment-Hed"
+                class="text-white flex items-center justify-between font-bold text-base"
+              >
+                <h3 class="assessmentHeading lg:text-xl">
+                  Quick Assessment Creation
+                </h3>
+                <ion-icon
+                  id="howItWorksCardAssessment-Icon"
+                  class="assessmentIcon rotate-180 md:hidden"
+                  name="chevron-down-outline"
+                ></ion-icon>
+              </div>
+              <span
+                id="howItWorksCardAssessment-Des"
+                class="assessmentDescription text-gray-100/75 md:group-hover:text-white font-light text-sm lg:text-base md:block leading-6"
+                >In less than 1 min, specify role, choose from suggested tests,
+                set weightages for skills.</span
+              >
+            </div>
+            <div
+              id="howItWorksCardDashboard"
+              class="dashboard howItWorksCard cursor-pointer flex flex-col gap-2 md:gap-4 md:min-w-60 lg:min-w-64 lg:p-10 lg:w-1/4 md:px-3 md:py-4 md:hover:border border-blue-500/50 box rounded-3xl group"
+            >
+              <div
+                id="howItWorksCardDashboard-Hed"
+                class="flex items-center justify-between font-bold text-base"
+              >
+                <h3 class="dashboardHeading lg:text-xl">Simple Dashboard</h3>
+                <ion-icon
+                  id="howItWorksCardDashboard-Icon"
+                  class="dashboardIcon md:hidden"
+                  name="chevron-down-outline"
+                ></ion-icon>
+              </div>
+              <span
+                id="howItWorksCardDashboard-Des"
+                class="dashboardDescription text-gray-100/75 md:group-hover:text-white font-light text-sm lg:text-base hidden md:block leading-6"
+                >Effortlessly manage candidate pipeline, set cut-off, sort by
+                test scores, track stages, export results.</span
+              >
+            </div>
+            <div
+              id="howItWorksCardQuestions"
+              class="questions howItWorksCard cursor-pointer flex flex-col gap-2 md:gap-4 md:min-w-60 lg:min-w-64 lg:p-10 lg:w-1/4 md:px-3 md:py-4 md:hover:border border-blue-500/50 box rounded-3xl group"
+            >
+              <div
+                id="howItWorksCardQuestions-Hed"
+                class="flex items-center justify-between font-bold text-base"
+              >
+                <h3 class="questionsHeading lg:text-xl">
+                  Our Questions and Yours
+                </h3>
+                <ion-icon
+                  id="howItWorksCardQuestions-Icon"
+                  class="questionsIcon md:hidden"
+                  name="chevron-down-outline"
+                ></ion-icon>
+              </div>
+              <span
+                id="howItWorksCardQuestions-Des"
+                class="questionsDescription text-gray-100/75 md:group-hover:text-white font-light text-sm lg:text-base hidden md:block leading-6"
+                >Use our Question Banks for the tests or add your own existing
+                questions too.</span
+              >
+            </div>
+            <div
+              id="howItWorksCardCheating"
+              class="cheating howItWorksCard cursor-pointer flex flex-col gap-2 md:gap-4 md:min-w-60 lg:min-w-64 lg:p-10 lg:w-1/4 md:px-3 md:py-4 md:hover:border border-blue-500/50 box rounded-3xl group"
+            >
+              <div
+                id="howItWorksCardCheating-Hed"
+                class="flex items-center justify-between font-bold text-base"
+              >
+                <h3 class="cheatingHeading lg:text-lg">
+                  Prevent Cheating on Tests
+                </h3>
+                <ion-icon
+                  id="howItWorksCardCheating-Icon"
+                  class="cheatingIcon md:hidden"
+                  name="chevron-down-outline"
+                ></ion-icon>
+              </div>
+              <span
+                id="howItWorksCardCheating-Des"
+                class="cheatingDescription text-gray-100/75 md:group-hover:text-white font-light text-sm lg:text-base hidden md:block leading-6"
+                >Track candidates cameras and screens. Detect if they are using
+                Google or ChatGPT, etc.</span
+              >
+            </div>
+          </div>
+        </div>
+        <div class="howItWorksPhotos flex flex-col md:items-center">
+          <div
+            id="howItWorksCardAssessment-Img"
+            class="img1 howItWorksImg overflow-x-auto md:w-full lg:w-4/5"
+          >
+            <img
+              class="max-w-screen-md md:min-w-full"
+              src="https://cdn-media-assets.socratease.co/equip/product/img/homepage/quick-assessment-creation.png"
+              alt="Assessment ScreenShot"
+            />
+          </div>
+          <div
+            id="howItWorksCardDashboard-Img"
+            class="img2 howItWorksImg hidden overflow-x-auto md:w-full lg:w-4/5"
+          >
+            <img
+              class="max-w-screen-md md:min-w-full"
+              src="https://cdn-media-assets.socratease.co/equip/product/img/homepage/simple-dashboard.png"
+              alt="Dashboard ScreenShot"
+            />
+          </div>
+          <div
+            id="howItWorksCardQuestions-Img"
+            class="img3 howItWorksImg hidden overflow-x-auto md:w-full lg:w-4/5"
+          >
+            <img
+              class="max-w-screen-md md:min-w-full"
+              src="https://cdn-media-assets.socratease.co/equip/product/img/homepage/our-questions-and-yours.png"
+              alt="Questions ScreenShot"
+            />
+          </div>
+          <div
+            id="howItWorksCardCheating-Img"
+            class="img4 howItWorksImg hidden overflow-x-auto md:w-full lg:w-4/5"
+          >
+            <img
+              class="max-w-screen-md md:min-w-full"
+              src="https://cdn-media-assets.socratease.co/equip/product/img/homepage/prevent-cheating-on-tests.png"
+              alt="Cheating ScreenShot"
+            />
+          </div>
+        </div>
+      </section>
+      <section class="ExploreSection flex justify-center">
+        <div
+          class="grid grid-cols-1 gap-5 md:grid-cols-10 px-3 py-5 text-blue-900 max-w-7xl"
+        >
+          <div class="md:col-span-6 flex flex-col gap-5 justify-center">
+            <a
+              href="#"
+              style="background-color: #ebe4ff"
+              class="demoTests flex flex-col rounded-3xl p-5 md:p-10 hover:scale-95 hover:shadow-lg transition-all"
+            >
+              <h3
+                class="text-xl md:text-3xl lg:text-4xl font-black mb-2 md:mb-3"
+              >
+                Try our Demo Tests
+              </h3>
+              <div class="flex justify-between items-center gap-4 mb-5 md:mb-3">
+                <p class="text-sm md:text-xl md:w-2/3 me-2">
+                  Would you hire a sales representative based on their dance
+                  moves? Of course not! Our role-specific tests evaluate the
+                  relevant skills perfectly.
+                </p>
+                <img
+                  class="w-20 md:w-auto"
+                  src="https://cdn-media-assets.socratease.co/equip/product/img/homepage/exploreTest.png"
+                  alt="demo test image"
+                />
+              </div>
+              <div
+                class="flex items-center gap-2 uppercase text-sm md:text-xl font-black tracking-widest"
+              >
+                <span>Explore Tests</span>
+                <ion-icon name="chevron-forward-outline"></ion-icon>
+              </div>
+            </a>
+            <a
+              href="#"
+              style="background-color: #c0e1bf"
+              class="explore flex flex-col rounded-3xl p-5 md:p-10 hover:scale-95 hover:shadow-lg transition-all"
+            >
+              <h3
+                class="text-xl md:text-3xl lg:text-4xl font-black mb-2 md:mb-3"
+              >
+                Explore Recruiter Dashboard
+              </h3>
+              <div class="flex justify-between items-center mb-5 md:mb-3">
+                <p class="text-sm md:text-xl md:w-2/3 me-2">
+                  Preview how a recruiter dashboard would look. Play around with
+                  Assessments, Results, Shortlisting and other features.
+                </p>
+                <img
+                  class="w-20 md:w-auto"
+                  src="https://cdn-media-assets.socratease.co/equip/product/img/homepage/exploreDashboard.png"
+                  alt="demo test image"
+                />
+              </div>
+              <div
+                class="flex items-center gap-2 uppercase text-sm md:text-xl font-black tracking-widest"
+              >
+                <span>Explore Dashboard</span>
+                <ion-icon name="chevron-forward-outline"></ion-icon>
+              </div>
+            </a>
+          </div>
+          <a
+            href="#"
+            style="background-color: #d2deff"
+            class="demoTests md:col-span-4 relative flex flex-col md:justify-between rounded-3xl p-5 md:p-10 md:w-full hover:scale-95 hover:shadow-lg transition-all"
+          >
+            <h3
+              class="text-xl md:text-3xl lg:text-4xl font-black mb-2 md:mb-0 xl:whitespace-nowrap"
+            >
+              Free Trial - 10 Candidates
+            </h3>
+            <div
+              class="flex md:flex-col items-center justify-between md:justify-around md:items-stretch md:h-4/5 mb-5 md:mb-3"
+            >
+              <p class="text-sm md:text-xl me-2 flex flex-col">
+                <span>Evaluate 10 candidates for free.</span>
+                <span
+                  ><strong>No credit card required.</strong> Experience our
+                  product without any commitments.</span
+                >
+              </p>
+              <img
+                class="w-20 md:w-52 self-end md:relative -right-6"
+                src="https://cdn-media-assets.socratease.co/equip/product/img/homepage/startHiring.png"
+                alt="demo test image"
+              />
+            </div>
+            <div
+              class="flex items-center gap-2 uppercase text-sm md:text-xl font-black tracking-widest"
+            >
+              <span>Start Hiring For Free</span>
+              <ion-icon name="chevron-forward-outline"></ion-icon>
+            </div>
+          </a>
+        </div>
+      </section>
+      <section class="skillsSection bg-gray-50 mt-8 lg:mt-20 py-8 lg:py-16">
+        <div class="max-w-7xl mx-auto px-3 xl:px-0">
+          <h2
+            class="text-blue-900 text-2xl md:text-3xl font-black mb-10 text-center"
+          >
+            Filter candidates on
+            <span class="text-emerald-500/75"
+              >specific skills and technologies</span
+            >
+          </h2>
+          <div class="skillsAll mb-7 pb-4">
+            <div class="w-full">
+              <div
+                class="flex flex-col items-center justify-center gap-4 overflow-x-auto w-full pb-4"
+              >
+                <div class="skillsRow1 flex w-full lg:justify-center">
+                  <div
+                    class="skill flex justify-center items-center box-content gap-2 w-[112px] bg-white hover:bg-gray-100 rounded-3xl border border-gray-200 px-3 py-1 mr-2 group transition-all"
+                  >
+                    <img
+                      class="w-4 h-4"
+                      src="https://cdn-media-assets.socratease.co/equip/product/img/homepage/skills-icons/c.png"
+                      alt="c"
+                    />
+                    <span class="truncate group-hover:overflow-visible text-sm"
+                      >C</span
+                    >
+                  </div>
+                  <div
+                    class="skill flex justify-center items-center box-content gap-2 w-[112px] bg-white hover:bg-gray-100 rounded-3xl border border-gray-200 px-3 py-1 mr-2 group transition-all"
+                  >
+                    <img
+                      class="w-4 h-4"
+                      src="https://cdn-media-assets.socratease.co/equip/product/img/homepage/skills-icons/cpp.png"
+                      alt="cpp"
+                    />
+                    <span class="truncate group-hover:overflow-visible text-sm"
+                      >C++</span
+                    >
+                  </div>
+                  <div
+                    class="skill flex justify-center items-center box-content gap bg-white hover:bg-gray-100 rounded-3xl border border-gray-200 px-3 py-1 mr-2 group transition-all"
+                  >
+                    <img
+                      class="w-4 h-4"
+                      src="https://cdn-media-assets.socratease.co/equip/product/img/homepage/skills-icons/java.png"
+                      alt="Java"
+                    />
+                    <span class="truncate group-hover:overflow-visible text-sm"
+                      >Java</span
+                    >
+                  </div>
+                  <div
+                    class="skill flex justify-center items-center box-content gap-2 w-[112px] bg-white hover:bg-gray-100 rounded-3xl border border-gray-200 px-3 py-1 mr-2 group transition-all"
+                  >
+                    <img
+                      class="w-4 h-4"
+                      src="https://cdn-media-assets.socratease.co/equip/product/img/homepage/skills-icons/css.png"
+                      alt="css"
+                    />
+                    <span class="truncate group-hover:overflow-visible text-sm"
+                      >CSS</span
+                    >
+                  </div>
+                  <div
+                    class="skill flex justify-center items-center box-content gap-2 w-[112px] bg-white hover:bg-gray-100 rounded-3xl border border-gray-200 px-3 py-1 mr-2 group transition-all"
+                  >
+                    <img
+                      class="w-4 h-4"
+                      src="https://cdn-media-assets.socratease.co/equip/product/img/homepage/skills-icons/javascript.png"
+                      alt="JavaScript"
+                    />
+                    <span class="truncate group-hover:overflow-visible text-sm"
+                      >JavaScript</span
+                    >
+                  </div>
+                  <div
+                    class="skill flex justify-center items-center box-content gap-2 w-[112px] bg-white hover:bg-gray-100 rounded-3xl border border-gray-200 px-3 py-1 mr-2 group transition-all"
+                  >
+                    <img
+                      class="w-4 h-4"
+                      src="https://cdn-media-assets.socratease.co/equip/product/img/homepage/skills-icons/reactjs.png"
+                      alt="react"
+                    />
+                    <span class="truncate group-hover:overflow-visible text-sm"
+                      >ReactJS</span
+                    >
+                  </div>
+                </div>
+                <div
+                  class="skillsRow2 flex w-full ml-36 lg:ml-0 lg:justify-center"
+                >
+                  <div
+                    class="skill flex justify-center items-center box-content gap-2 w-[112px] bg-white hover:bg-gray-100 rounded-3xl border border-gray-200 px-3 py-1 mr-2 group transition-all"
+                  >
+                    <img
+                      class="w-4 h-4"
+                      src="https://cdn-media-assets.socratease.co/equip/product/img/homepage/skills-icons/nodejs.png"
+                      alt="nodejs"
+                    />
+                    <span class="truncate group-hover:overflow-visible text-sm"
+                      >NodeJs</span
+                    >
+                  </div>
+                  <div
+                    class="skill flex justify-center items-center box-content gap-2 w-[112px] bg-white hover:bg-gray-100 rounded-3xl border border-gray-200 px-3 py-1 mr-2 group transition-all"
+                  >
+                    <img
+                      class="w-4 h-4"
+                      src="https://cdn-media-assets.socratease.co/equip/product/img/homepage/skills-icons/expressjs.png"
+                      alt="express.js"
+                    />
+                    <span class="truncate group-hover:overflow-visible text-sm"
+                      >Express.js</span
+                    >
+                  </div>
+                  <div
+                    class="skill flex justify-center items-center box-content gap-2 w-[112px] bg-white hover:bg-gray-100 rounded-3xl border border-gray-200 px-3 py-1 mr-2 group transition-all"
+                  >
+                    <img
+                      class="w-4 h-4"
+                      src="https://cdn-media-assets.socratease.co/equip/product/img/homepage/skills-icons/python.png"
+                      alt="python"
+                    />
+                    <span class="truncate group-hover:overflow-visible text-sm"
+                      >Python</span
+                    >
+                  </div>
+                  <div
+                    class="skill flex justify-center items-center box-content gap-2 w-[112px] bg-white hover:bg-gray-100 rounded-3xl border border-gray-200 px-3 py-1 mr-2 group transition-all"
+                  >
+                    <img
+                      class="w-4 h-4"
+                      src="https://cdn-media-assets.socratease.co/equip/product/img/homepage/skills-icons/mongodb.png"
+                      alt="mongodb"
+                    />
+                    <span class="truncate group-hover:overflow-visible text-sm"
+                      >MongoDB</span
+                    >
+                  </div>
+                  <div
+                    class="skill flex justify-center items-center box-content gap-2 w-[112px] bg-white hover:bg-gray-100 rounded-3xl border border-gray-200 px-3 py-1 mr-2 group transition-all"
+                  >
+                    <img
+                      class="w-4 h-4"
+                      src="https://cdn-media-assets.socratease.co/equip/product/img/homepage/skills-icons/sql.png"
+                      alt="sql"
+                    />
+                    <span class="truncate group-hover:overflow-visible text-sm"
+                      >SQL</span
+                    >
+                  </div>
+                </div>
+                <div class="skillsRow3 flex w-full lg:justify-center">
+                  <div
+                    class="skill flex justify-center items-center box-content gap-2 w-[112px] hover:min-w-max bg-white hover:bg-gray-100 rounded-3xl border border-gray-200 px-3 py-1 mr-2 group transition-all"
+                  >
+                    <img
+                      class="w-4 h-4"
+                      src="https://cdn-media-assets.socratease.co/equip/product/img/homepage/skills-icons/attention-to-detail.png"
+                      alt="attention to details"
+                    />
+                    <span class="truncate group-hover:overflow-visible text-sm"
+                      >Attention To Details</span
+                    >
+                  </div>
+                  <div
+                    class="skill flex justify-center items-center box-content gap-2 w-[112px] bg-white hover:bg-gray-100 rounded-3xl border border-gray-200 px-3 py-1 mr-2 group transition-all"
+                  >
+                    <img
+                      class="w-4 h-4"
+                      src="https://cdn-media-assets.socratease.co/equip/product/img/homepage/skills-icons/logical-and-analytical-reasoning.png"
+                      alt="aptitude"
+                    />
+                    <span class="truncate group-hover:overflow-visible text-sm"
+                      >Aptitude Test</span
+                    >
+                  </div>
+                  <div
+                    class="skill flex justify-center items-center box-content gap-2 w-[112px] hover:min-w-max bg-white hover:bg-gray-100 rounded-3xl border border-gray-200 px-3 py-1 mr-2 group transition-all"
+                  >
+                    <img
+                      class="w-4 h-4"
+                      src="https://cdn-media-assets.socratease.co/equip/product/img/homepage/skills-icons/english-communication.png"
+                      alt="english Communication"
+                    />
+                    <span class="truncate group-hover:overflow-visible text-sm"
+                      >English Communication</span
+                    >
+                  </div>
+                  <div
+                    class="skill flex justify-center items-center box-content gap-2 w-[112px] bg-white hover:bg-gray-100 rounded-3xl border border-gray-200 px-3 py-1 mr-2 group transition-all"
+                  >
+                    <img
+                      class="w-4 h-4"
+                      src="https://cdn-media-assets.socratease.co/equip/product/img/homepage/skills-icons/english-language.png"
+                      alt="english learning"
+                    />
+                    <span class="truncate group-hover:overflow-visible text-sm"
+                      >English Learning</span
+                    >
+                  </div>
+                  <div
+                    class="skill flex justify-center items-center box-content gap-2 w-[112px] hover:min-w-max bg-white hover:bg-gray-100 rounded-3xl border border-gray-200 px-3 py-1 mr-2 group transition-all"
+                  >
+                    <img
+                      class="w-4 h-4"
+                      src="https://cdn-media-assets.socratease.co/equip/product/img/homepage/skills-icons/interpersonal-skills.png"
+                      alt="Interpersonal skills"
+                    />
+                    <span class="truncate group-hover:overflow-visible text-sm"
+                      >Interpersonal Skills</span
+                    >
+                  </div>
+                  <div
+                    class="skill flex justify-center items-center box-content gap-2 w-[112px] bg-white hover:bg-gray-100 rounded-3xl border border-gray-200 px-3 py-1 mr-2 group transition-all"
+                  >
+                    <img
+                      class="w-4 h-4"
+                      src="https://cdn-media-assets.socratease.co/equip/product/img/homepage/skills-icons/fb-and-insta-ads.png"
+                      alt="fb and insta"
+                    />
+                    <span class="truncate group-hover:overflow-visible text-sm"
+                      >FB & Insta Ads</span
+                    >
+                  </div>
+                </div>
+                <div
+                  class="skillsRow4 flex w-full ml-36 lg:ml-0 lg:justify-center"
+                >
+                  <div
+                    class="skill flex justify-center items-center box-content gap-2 w-[112px] bg-white hover:bg-gray-100 rounded-3xl border border-gray-200 px-3 py-1 mr-2 group transition-all"
+                  >
+                    <img
+                      class="w-4 h-4"
+                      src="https://cdn-media-assets.socratease.co/equip/product/img/homepage/skills-icons/data-science.png"
+                      alt="data science"
+                    />
+                    <span class="truncate group-hover:overflow-visible text-sm"
+                      >Data Science</span
+                    >
+                  </div>
+                  <div
+                    class="skill flex justify-center items-center box-content gap-2 w-[112px] bg-white hover:bg-gray-100 rounded-3xl border border-gray-200 px-3 py-1 mr-2 group transition-all"
+                  >
+                    <img
+                      class="w-4 h-4"
+                      src="https://cdn-media-assets.socratease.co/equip/product/img/homepage/skills-icons/machine-learning.png"
+                      alt="ml"
+                    />
+                    <span class="truncate group-hover:overflow-visible text-sm"
+                      >ML</span
+                    >
+                  </div>
+                  <div
+                    class="skill flex justify-center items-center box-content gap-2 w-[112px] bg-white hover:bg-gray-100 rounded-3xl border border-gray-200 px-3 py-1 mr-2 group transition-all"
+                  >
+                    <img
+                      class="w-4 h-4"
+                      src="https://cdn-media-assets.socratease.co/equip/product/img/homepage/skills-icons/google-ads.png"
+                      alt="google ads"
+                    />
+                    <span class="truncate group-hover:overflow-visible text-sm"
+                      >Google Ads</span
+                    >
+                  </div>
+                  <div
+                    class="skill flex justify-center items-center box-content gap-2 w-[112px] bg-white hover:bg-gray-100 rounded-3xl border border-gray-200 px-3 py-1 mr-2 group transition-all"
+                  >
+                    <img
+                      class="w-4 h-4"
+                      src="https://cdn-media-assets.socratease.co/equip/product/img/homepage/skills-icons/webservers.png"
+                      alt="webservers"
+                    />
+                    <span class="truncate group-hover:overflow-visible text-sm"
+                      >Web Servers</span
+                    >
+                  </div>
+                  <div
+                    class="skill flex justify-center items-center box-content gap-2 w-[112px] bg-white hover:bg-gray-100 rounded-3xl border border-gray-200 px-3 py-1 mr-2 group transition-all"
+                  >
+                    <img
+                      class="w-4 h-4"
+                      src="https://cdn-media-assets.socratease.co/equip/product/img/homepage/skills-icons/digital-marketing.png"
+                      alt="digital-marketing"
+                    />
+                    <span class="truncate group-hover:overflow-visible text-sm"
+                      >Digital Marketing</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <a
+            href="#"
+            class="uppercase rounded-full bg-emerald-500/75 px-8 py-3 font-bold border border-emerald-500/75 text-white text-sm lg:text-base tracking-widest hover:scale-105 transition-all mt-5 block w-max mx-auto"
+            >View all skills</a
+          >
+        </div>
+      </section>
+      <section class="featuresSection mt-8 lg:mt-20 flex flex-col items-center">
+        <div>
+          <div
+            class="featuresTop flex flex-col lg:flex-row items-center justify-center text-xl lg:text-3xl font-black px-8 lg:tracking-tight xl:tracking-normal lg:max-w-xl lg:mx-auto mb-16"
+          >
+            <span class="text-emerald-500/75 mb-3 lg:mb-0"
+              ><ion-icon
+                class="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 lg:w-14 lg:h-14"
+                name="flash"
+              ></ion-icon
+            ></span>
+            <h2
+              class="text-blue-900 px-4 lg:px-1 text-center lg:whitespace-nowrap"
+            >
+              Our customers shortlist the top 3% performers,
+            </h2>
+            <span class="text-emerald-500/75 lg:whitespace-nowrap"
+              >saving 97% of their time</span
+            >
+          </div>
+          <div
+            class="featuresBottom text-blue-900 px-3 flex flex-col lg:flex-row lg:justify-around gap-5 max-w-7xl"
+          >
+            <div
+              class="featureBlock1 bg-gray-50 p-8 rounded-2xl lg:w-1/3 lg:mx-5"
+            >
+              <h2 class="flex items-center gap-3 mb-5">
+                <ion-icon
+                  class="text-emerald-500/75 w-8 h-8 xs:w-6 xs:h-6 sm:w-8 sm:h-8 md:w-10 md:h-10 lg:w-12 lg:h-12"
+                  name="documents-outline"
+                ></ion-icon>
+                <span class="text-base lg:text-2xl font-bold"
+                  >Ready-to-Use Tests</span
+                >
+              </h2>
+              <p class="text-sm md:text-xl leading-6">
+                Tests for Aptitude, Programming, Communication & Interpersonal
+                Skills, etc
+              </p>
+            </div>
+            <div
+              class="featureBlock2 bg-gray-50 p-8 rounded-2xl lg:w-1/3 lg:mx-5"
+            >
+              <h2 class="flex items-center gap-3 mb-5">
+                <ion-icon
+                  class="text-emerald-500/75 w-8 h-8 xs:w-6 xs:h-6 sm:w-8 sm:h-8 md:w-10 md:h-10 lg:w-12 lg:h-12"
+                  name="book-outline"
+                ></ion-icon>
+                <span class="text-base lg:text-2xl font-bold"
+                  >Skill-based Questions</span
+                >
+              </h2>
+              <p class="text-sm md:text-xl leading-6">
+                We test for Knowledge needed to perform the job competently. Not
+                to pass an Entrance exam.
+              </p>
+            </div>
+            <div
+              class="featureBlock3 bg-gray-50 p-8 rounded-2xl lg:w-1/3 lg:mx-5"
+            >
+              <h2 class="flex items-center gap-3 mb-5">
+                <ion-icon
+                  class="text-emerald-500/75 w-8 h-8 xs:w-6 xs:h-6 sm:w-8 sm:h-8 md:w-10 md:h-10 lg:w-12 lg:h-12"
+                  name="easel-outline"
+                ></ion-icon>
+                <span class="text-base lg:text-2xl font-bold"
+                  >Pricing that Scales</span
+                >
+              </h2>
+              <p class="text-sm md:text-xl leading-6">
+                Small and large teams assess tens to tens of thousands of
+                candidates on Equip
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="seamlessHiringSection flex justify-center mb-16">
+        <div class="text-blue-900 text-center">
+          <h2 class="text-2xl lg:text-3xl font-black m-12 md:mb-24">
+            Seamless hiring made easy in
+            <span class="text-emerald-500/75">3 simple steps</span>
+          </h2>
+          <div
+            class="steps relative flex flex-col lg:flex-row gap-5 items-center lg:justify-between md:max-w-5xl xl:max-w-7xl"
+          >
+            <div class="step1 w-fit flex lg:justify-center lg:w-1/4">
+              <span
+                class="text-emerald-100/75 text-6xl sm:text-7xl md:text-8xl font-bold -z-10 relative left-4 top-9 xs:top-2.5 sm:top-1 md:-top-1 lg:top-8 lg:left-3"
+                >1</span
+              >
+              <!-- lg:max-w-64 -->
+              <div class="w-3/4 xs:w-fit lg:w-3/4">
+                <span
+                  class="text-xl md:text-2xl font-bold inline-block mb-3 w-5/6 xs:w-fit"
+                  >Create & Share Assessment</span
+                >
+                <p class="mb-5 text-sm lg:text-xl">
+                  Using Equip's Question Banks, or add your own questions
+                </p>
+              </div>
+            </div>
+            <div class="step2 w-fit flex lg:justify-center lg:w-1/4">
+              <span
+                class="text-emerald-100/75 text-6xl sm:text-7xl md:text-8xl font-bold -z-10 relative left-10 top-9 xs:top-2.5 xs:left-9 sm:top-1 md:-top-2 lg:top-8 lg:left-3 -translate-x-1/2"
+                >2</span
+              >
+              <!-- lg:max-w-64 -->
+              <div class="w-3/4 xs:w-fit lg:w-3/4">
+                <span
+                  class="text-xl md:text-2xl font-bold inline-block mb-3 w-5/6 xs:w-fit"
+                  >Candidates finish Assessment remotely</span
+                >
+                <p class="mb-5 text-sm lg:text-xl">
+                  Typically, 30 mins to 1 hour. With anti-cheating measures
+                </p>
+              </div>
+            </div>
+            <div class="step3 w-fit flex lg:justify-center lg:w-1/4">
+              <span
+                class="text-emerald-100/75 text-6xl sm:text-7xl md:text-8xl font-bold -z-10 relative left-11 top-9 xs:left-8 xs:top-2.5 sm:top-1 md:left-9 md:-top-2 lg:top-12 lg:left-3 -translate-x-1/2"
+                >3</span
+              >
+              <!-- lg:max-w-64 -->
+              <div class="w-3/4 xs:w-fit lg:w-3/4">
+                <span
+                  class="text-xl md:text-2xl font-bold inline-block mb-3 w-5/6 xs:w-fit"
+                  >Shortlist only the best performing candidates</span
+                >
+                <p class="mb-5 text-sm lg:text-xl">
+                  Equip automatically evaluates candidates’s responses
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="getStartedSection bg-blue-900">
+        <div class="p-10 mb-14 md:mb-20">
+          <h3
+            class="text-2xl lg:text-3xl font-extrabold text-white text-center mb-4"
+          >
+            Discover the Power of Effective Candidate Testing Today!
+          </h3>
+          <p
+            class="text-base lg:text-xl font-normal text-white/75 text-center mb-10"
+          >
+            Get started with Equip and streamline your hiring process
+          </p>
+          <div
+            class="flex flex-col lg:flex-row justify-center items-start w-max mx-auto relative"
+          >
+            <a
+              class="rounded-full bg-emerald-500/75 px-8 py-3 font-bold border border-emerald-500/75 text-white text-sm lg:text-md tracking-widest hover:scale-105 transition-all mb-5 lg:mb-0 lg:mx-5"
+              href="#"
+              >CONVICTED? START HIRING</a
+            >
+            <span class="flex flex-col">
+              <button
+                class="rounded-full bg-none px-8 py-3 text-emerald-500/75 border font-bold border-emerald-500/75 text-sm lg:text-emerald-50 tracking-widest hover:scale-105 transition-all lg:mx-5"
+              >
+                NOT YET? LET US HELP YOU
+              </button>
+              <span
+                class="text-xs sm:text-sm text-white/75 font-normal text-center mt-3"
+                >Chat with us, we are live</span
+              >
+            </span>
+          </div>
+        </div>
+      </section>
+      <section class="TestimonialsSection">
+        <div
+          class="flex flex-col items-center text-left mb-16 lg:mb-28 max-w-7xl mx-auto px-3 xl:px-0"
+        >
+          <div
+            class="topTestimonials flex flex-col text-center lg:flex-row justify-between w-full px-4"
+          >
+            <h3
+              class="text-2xl lg:text-3xl text-blue-900 font-black mb-5 lg:mb-0"
+            >
+              Our customers love hiring
+              <span class="text-emerald-500/75">via Equip</span>
+            </h3>
+            <a
+              href="#"
+              class="group flex gap-2 items-center justify-center divide-x"
+            >
+              <img
+                class="h-5"
+                src="https://equip.co/static/img/marketing/alternative-to-g2-review.png"
+                alt="Equip rating"
+              />
+              <span
+                class="text-blue-700 group-hover:text-blue-800 pl-2 group-hover:underline"
+                >400+ reviews</span
+              >
+            </a>
+          </div>
+          <div class="flex overflow-x-auto py-2 lg:py-4 w-full lg:w-full">
+            <div
+              class="testimonial1 group minCardWidth p-6 lg:p-8 bg:white text-blue-900 shadow hover:shadow-xl rounded-3xl my-4 mx-2 lg:mx-5 transition-all flex flex-col gap-2 md:gap-4"
+            >
+              <h3 class="lg:text-xl font-bold tracking-wide">
+                Equip is Treebo's trusted Campus Hiring Partner
+              </h3>
+              <p
+                class="flex gap-2 font-normal text-xs lg:text-sm leading-4 lg:leading-6 text-gray-700"
+              >
+                <span
+                  class="relative text-6xl text-gray-200 -top-1 group-hover:text-emerald-200"
+                  >"</span
+                >
+                <span
+                  >We used Equip for conducting tests during our recent campus
+                  recruitment drive. Found the platform very easy to use & super
+                  fast. The session recording feature was very useful. Overall a
+                  great platform to conduct remote online tests.</span
+                >
+              </p>
+              <div class="mt-auto">
+                <div class="flex items-center mb-4">
+                  <img
+                    class="h-8 rounded-full w-auto mr-2"
+                    src="https://cdn-media-assets.socratease.co/equip/product/img/testimonial-icons/mayank-k.png"
+                    alt="testimonial-profile-photo"
+                  />
+                  <span>
+                    <h3
+                      class="text-xs lg:text-sm font-bold text-gray-800 tracking-wide"
+                    >
+                      Mayank K
+                    </h3>
+                    <p class="font-extralight text-xs text-gray-400">
+                      CTO, Treebo Hotels
+                    </p>
+                  </span>
+                </div>
+
+                <a href="#">
+                  <img
+                    class="h-9 md:h-10 w-auto grayscale group-hover:grayscale-0 transition-all"
+                    src="https://equip.co/static/img/client-logos/treebo.png"
+                    alt="treebo logo"
+                  />
+                </a>
+              </div>
+            </div>
+            <div
+              class="testimonial2 group minCardWidth p-6 lg:p-8 bg:white text-blue-900 shadow hover:shadow-xl rounded-3xl my-4 mx-2 lg:mx-5 transition-all flex flex-col gap-2 md:gap-4"
+            >
+              <h3 class="lg:text-xl font-bold tracking-wide">
+                Equip is MyGate's trusted Campus Hiring Partner
+              </h3>
+              <p
+                class="flex gap-2 font-normal text-xs lg:text-sm leading-4 lg:leading-6 text-gray-700"
+              >
+                <span
+                  class="relative text-6xl text-gray-200 -top-1 group-hover:text-emerald-200"
+                  >"</span
+                >
+                <span
+                  >Equip ensures fair & accurate candidate evaluation for a
+                  broad range of skill assessments.</span
+                >
+              </p>
+              <div class="mt-auto">
+                <div class="flex items-center mb-4">
+                  <img
+                    class="h-8 rounded-full w-auto mr-2"
+                    src="https://cdn-media-assets.socratease.co/equip/product/img/testimonial-icons/jijo-j.png"
+                    alt="testimonial-profile-photo"
+                  />
+                  <span>
+                    <h3
+                      class="text-xs lg:text-sm font-bold text-gray-800 tracking-wide"
+                    >
+                      Jijo J
+                    </h3>
+                    <p class="font-extralight text-xs text-gray-400">
+                      Talent Partnet, MyGate
+                    </p>
+                  </span>
+                </div>
+
+                <a href="#">
+                  <img
+                    class="h-9 md:h-10 w-auto grayscale group-hover:grayscale-0 transition-all"
+                    src="https://equip.co/static/img/client-logos/mygate.png"
+                    alt="mygate logo"
+                  />
+                </a>
+              </div>
+            </div>
+            <div
+              class="testimonial3 group minCardWidth p-6 lg:p-8 bg:white text-blue-900 shadow hover:shadow-xl rounded-3xl my-4 mx-2 lg:mx-5 transition-all flex flex-col gap-2 md:gap-4"
+            >
+              <h3 class="lg:text-xl font-bold tracking-wide">
+                Amazing Platform for IT Hiring
+              </h3>
+              <p
+                class="flex gap-2 font-normal text-xs lg:text-sm leading-4 lg:leading-6 text-gray-700"
+              >
+                <span
+                  class="relative text-6xl text-gray-200 -top-1 group-hover:text-emerald-200"
+                  >"</span
+                >
+                <span
+                  >Easy to use, gives perfect results, I've been using it for IT
+                  hiring. Very supportive team, always ready to help and
+                  support. This has helped in adding an elimination stage in the
+                  interview process so the panel only has to deal with filtered
+                  profiles. I recommend Equip to all the recruiters who want an
+                  elimination round in the interviews process.</span
+                >
+              </p>
+              <div class="mt-auto">
+                <div class="flex items-center mb-4">
+                  <img
+                    class="h-8 rounded-full w-auto mr-2"
+                    src="https://cdn-media-assets.socratease.co/equip/product/img/testimonial-icons/sheetal-c.png"
+                    alt="testimonial-profile-photo"
+                  />
+                  <span>
+                    <h3
+                      class="text-xs lg:text-sm font-bold text-gray-800 tracking-wide"
+                    >
+                      Sheetal C
+                    </h3>
+                    <p class="font-extralight text-xs text-gray-400">
+                      Manager - Recruitment, One Point One Solutions
+                    </p>
+                  </span>
+                </div>
+
+                <a href="#">
+                  <img
+                    class="h-9 md:h-10 w-auto grayscale group-hover:grayscale-0 transition-all"
+                    src="https://equip.co/static/img/client-logos/1point1.png"
+                    alt="1point logo"
+                  />
+                </a>
+              </div>
+            </div>
+            <div
+              class="testimonial4 group minCardWidth p-6 lg:p-8 bg:white text-blue-900 shadow hover:shadow-xl rounded-3xl my-4 mx-2 lg:mx-5 transition-all flex flex-col gap-2 md:gap-4"
+            >
+              <h3 class="lg:text-xl font-bold tracking-wide">
+                Effective platform, super responsive team!
+              </h3>
+              <p
+                class="flex gap-2 font-normal text-xs lg:text-sm leading-4 lg:leading-6 text-gray-700"
+              >
+                <span
+                  class="relative text-6xl text-gray-200 -top-1 group-hover:text-emerald-200"
+                  >"</span
+                >
+                <span
+                  >Easy to use platform, can configure tests of varying skills
+                  levels and complexity. Also, a very performant solution - we
+                  had scores of people giving tests together (campus
+                  interviews!) and it worked like a charm. The complexity of the
+                  problems at the right level for my requirements.</span
+                >
+              </p>
+              <div class="mt-auto">
+                <div class="flex items-center mb-4">
+                  <img
+                    class="h-8 rounded-full w-auto mr-2"
+                    src="https://cdn-media-assets.socratease.co/equip/product/img/testimonial-icons/avinash-r.png"
+                    alt="testimonial-profile-photo"
+                  />
+                  <span>
+                    <h3
+                      class="text-xs lg:text-sm font-bold text-gray-800 tracking-wide"
+                    >
+                      Avinash R.
+                    </h3>
+                    <p class="font-extralight text-xs text-gray-400">
+                      Head of India Operations, LiveSwitch
+                    </p>
+                  </span>
+                </div>
+
+                <a href="#">
+                  <img
+                    class="h-9 md:h-10 w-auto grayscale group-hover:grayscale-0 transition-all"
+                    src="https://equip.co/static/img/client-logos/liveswitch.png"
+                    alt="liveswitch logo"
+                  />
+                </a>
+              </div>
+            </div>
+            <div
+              class="testimonial5 group minCardWidth p-6 lg:p-8 bg:white text-blue-900 shadow hover:shadow-xl rounded-3xl my-4 mx-2 lg:mx-5 transition-all flex flex-col gap-2 md:gap-4"
+            >
+              <h3 class="lg:text-xl font-bold tracking-wide">
+                Conducting 1000's of assessments every month
+              </h3>
+              <p
+                class="flex gap-2 font-normal text-xs lg:text-sm leading-4 lg:leading-6 text-gray-700"
+              >
+                <span
+                  class="relative text-6xl text-gray-200 -top-1 group-hover:text-emerald-200"
+                  >"</span
+                >
+                <span
+                  >Equip is helping us conduct thousands of remote assessments
+                  every month. They were able to come back on the requested
+                  features pretty quickly like — API based data-access,
+                  text-based plagiarism detection, single-use assessment invite
+                  link etc.</span
+                >
+              </p>
+              <div class="mt-auto">
+                <div class="flex items-center mb-4">
+                  <img
+                    class="h-8 rounded-full w-auto mr-2"
+                    src="https://cdn-media-assets.socratease.co/equip/product/img/testimonial-icons/sachin-m.png"
+                    alt=""
+                  />
+                  <span>
+                    <h3
+                      class="text-xs lg:text-sm font-bold text-gray-800 tracking-wide"
+                    >
+                      Sachin M
+                    </h3>
+                    <p class="font-extralight text-xs text-gray-400">
+                      Mentor, MountBlue
+                    </p>
+                  </span>
+                </div>
+
+                <a href="#">
+                  <img
+                    class="h-9 md:h-10 w-auto grayscale group-hover:grayscale-0 transition-all"
+                    src="https://equip.co/static/img/client-logos/mountblue.png"
+                    alt="treebo logo"
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="AcheivementsSection flex flex-col items-center">
+        <div class="mx-auto px-3 xl:px-0 text-blue-900">
+          <div
+            class="flex flex-col lg:flex-row lg:items-center mb-8 mx-2 lg:mx-20"
+          >
+            <h3
+              class="text-xl lg:text-3xl font-extrabold lg:w-1/2 px-2 mb-5 lg:mb-0"
+            >
+              Winning isnt't everything!
+            </h3>
+            <span class="lg:w-1/2 px-2 text-sm lg:text-xl lg:leading-8"
+              >But we're not complaining. These are a few of our favourite
+              achievements from <strong>G2</strong> the past few years</span
+            >
+          </div>
+        </div>
+        <div
+          class="w-full bg-[url('https://cdn-media-assets.socratease.co/equip/product/img/homepage/banner_bg.png')] bg-blend-color-burn bg-blue-100 bg-cover bg-no-repeat bg-center h-full px-3 py-5 md:px-4 md:py-8"
+        >
+          <img
+            class="w-full h-full block md:hidden"
+            src="https://cdn-media-assets.socratease.co/equip/product/img/homepage/banner_item_mobile.png"
+            alt=""
+          />
+          <img
+            class="w-full h-full hidden md:block"
+            src="https://cdn-media-assets.socratease.co/equip/product/img/homepage/banner_item_desktop.png"
+            alt=""
+          />
+        </div>
+      </section>
+      <div
+        class="chatWithUs z-30 fixed bg-blue-500 rounded-full bottom-4 right-4 w-14 h-14"
+      >
+        <a href="#">
+          <ion-icon
+            class="fill-white w-1/2 h-1/2 -rotate-12 translate-y-1/2 translate-x-1/2"
+            name="chatbox-sharp"
+          ></ion-icon>
+        </a>
+      </div>
+    </div>
+    <footer
+      class="gap-x-2 bg-blue-900 text-gray-300 px-5 py-9 font-semibold font-sans relative"
+    >
+      <div class="md:grid grid-cols-6 max-w-7xl mx-auto">
+        <div class="col-span-2 flex flex-col z-10">
+          <img
+            class="h-7 w-20 md:h-9 md:w-32"
+            src="https://equip.co/static/img/equip-logo-bw.png"
+            alt="equip logo"
+          />
+          <p class="mt-5">Online Skill Tests for Hiring</p>
+          <p class="text-xs mt-3">
+            &copy; 2024 Socratease, Inc. All rights reserved.
+          </p>
+          <div class="flex items-center mt-5 gap-x-3">
+            <img
+              class="w-14"
+              src="https://equip.co/static/img/users-love-us.svg"
+              alt="achievement logo"
+            />
+            <img
+              class="w-14"
+              src="https://equip.co/static/img/g2-high-performer-spring-23.svg"
+              alt="achievement logo"
+            />
+            <img
+              style="max-width: 120px"
+              class="w-full h-full md:h-16 md:w-24"
+              src="https://www.g2.com/products/socratease-inc-equip/widgets/stars?color=white&type=read"
+            />
+          </div>
+        </div>
+        <div class="mt-4 md:mt-0 z-10">
+          <h3 class="text-white font-bold mb-1 md:mb-3">Equip</h3>
+          <ul
+            class="md:space-y-2 text-sm md:text-base grid grid-cols-2 sm:grid-cols-3 md:grid-cols-1 gap-y-2 gap-x-4 max-w-md mb-4"
+          >
+            <li class="text-gray-200 hover:text-white transition-all">
+              <a href="#">Features</a>
+            </li>
+            <li class="text-gray-200 hover:text-white transition-all">
+              <a href="#">Blog</a>
+            </li>
+            <li class="text-gray-200 hover:text-white transition-all">
+              <a href="#">FAQs</a>
+            </li>
+            <li class="text-gray-200 hover:text-white transition-all">
+              <a href="#">Pricing</a>
+            </li>
+            <li class="text-gray-200 hover:text-white transition-all">
+              <a href="#">Integrations</a>
+            </li>
+          </ul>
+        </div>
+        <div class="mt-4 md:mt-0 z-10">
+          <h3 class="text-white font-bold mb-1 md:mb-3">Compare</h3>
+          <ul
+            class="md:space-y-2 text-sm md:text-base grid grid-cols-2 sm:grid-cols-3 md:grid-cols-1 gap-y-2 gap-x-4 max-w-md mb-4"
+          >
+            <li class="text-gray-200 hover:text-white transition-all">
+              <a href="#">Equip vs HackerRank</a>
+            </li>
+            <li class="text-gray-200 hover:text-white transition-all">
+              <a href="#">Equip vs HackerEarth</a>
+            </li>
+            <li class="text-gray-200 hover:text-white transition-all">
+              <a href="#">Equip vs TestGorilla</a>
+            </li>
+            <li class="text-gray-200 hover:text-white transition-all">
+              <a href="#">Equip vs Mettle</a>
+            </li>
+            <li class="text-gray-200 hover:text-white transition-all">
+              <a href="#">Equip vs iMocha</a>
+            </li>
+            <li class="text-gray-200 hover:text-white transition-all">
+              <a href="#">Why Equip Wins</a>
+            </li>
+          </ul>
+        </div>
+        <div class="mt-4 md:mt-0 z-10">
+          <h3 class="text-white font-bold mb-1 md:mb-3">Legal</h3>
+          <ul
+            class="md:space-y-2 text-sm md:text-base grid grid-cols-2 sm:grid-cols-3 md:grid-cols-1 gap-y-2 gap-x-4 max-w-md mb-4"
+          >
+            <li class="text-gray-200 hover:text-white transition-all">
+              <a href="#">Terms of Services</a>
+            </li>
+            <li class="text-gray-200 hover:text-white transition-all">
+              <a href="#">Privacy Policy</a>
+            </li>
+          </ul>
+        </div>
+        <div class="mt-4 md:mt-0 z-10">
+          <h3 class="text-white font-bold mb-1 md:mb-3">Contact</h3>
+          <ul
+            class="md:space-y-2 text-white grid grid-cols-2 sm:grid-cols-3 md:grid-cols-1 gap-y-2 gap-x-4 max-w-md"
+          >
+            <li class="text-gray-200 hover:text-white transition-all">
+              <a href="mailto:hello@equip.co" target="_blank">hello@equip.co</a>
+            </li>
+            <li
+              class="flex items-center gap-2 text-gray-200 hover:text-white transition-all"
+            >
+              <a
+                href="https://www.linkedin.com/company/equiphq/"
+                target="_blank"
+              >
+                <img
+                  src="https://equip.co/static/img/icons/ph_linkedin-logo.svg"
+                  alt="Linkedin icon"
+                />
+              </a>
+              <a
+                href="https://www.g2.com/products/socratease-inc-equip/reviews"
+                target="_blank"
+              >
+                <img
+                  class="mr-1"
+                  src="https://equip.co/static/img/icons/g2-logo.svg"
+                  alt="Socratease icon"
+                />
+              </a>
+              <a href="https://twitter.com/get_equip" target="_blank">
+                <img
+                  src="https://equip.co/static/img/icons/twitter-logo.svg"
+                  alt="twitter icon"
+                />
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <img
+        class="md:hidden absolute top-14 right-0"
+        src="https://equip.co/static/img/box-pattern-footer.svg"
+        alt="footer background 1"
+      />
+      <img
+        class="hidden md:block absolute top-0 left-0 h-16"
+        src="	https://equip.co/static/img/Dot.svg"
+        alt="footer background 2"
+      />
+      <img
+        class="hidden md:block absolute top-0 right-0"
+        src="https://equip.co/static/img/box-pattern-footer-desktop.svg"
+        alt="footer background 3"
+      />
+    </footer>
+  </body>
+</html>

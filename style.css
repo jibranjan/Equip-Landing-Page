@@ -1,0 +1,45 @@
+body {
+  font-family: "Lato", sans-serif;
+}
+
+.insideSkills div ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+.insideSkills div ul li {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1rem;
+}
+.insideSkills div ul li img {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+.minCardWidth {
+  min-width: 83.33333%;
+}
+.skill {
+  min-width: 130px;
+}
+
+@media (min-width: 1024px) {
+  .minCardWidth {
+    min-width: 40%;
+  }
+}
+@media (min-width: 768px) {
+  .topText {
+    grid-column: 1/7;
+    grid-row: 1;
+  }
+  .topImage {
+    grid-column: 7/-1;
+  }
+}
+@media (max-width: 800px) {
+  .insideUseCases {
+    top: 2rem;
+  }
+}
